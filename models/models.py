@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from sqlalchemy import MetaData, Integer, String, TIMESTAMP, ForeignKey, Table, Column, JSON
 
 metadata = MetaData()
@@ -8,7 +7,7 @@ roles = Table(
     "roles",
     metadata,
     Column("id", Integer, primary_key=True),
-    Column("name", String, nulable=False),
+    Column("name", String, nullable=False),
     Column("permissions", JSON),
 
 )
