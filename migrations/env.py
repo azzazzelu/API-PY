@@ -3,6 +3,7 @@ from logging.config import fileConfig
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 #alembic revision --autogenerate -m "Database creation"
+#alembic revision --autogenerate -m "Initil"
 
 
 from alembic import context
